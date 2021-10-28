@@ -1,1 +1,132 @@
-/* Add CSS styling here */
+
+
+
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+    /* border:1px solid grey;  */
+}
+
+html {
+    font-size: 1.8rem;
+    line-height:1.5;
+    color:#4f4f4f;
+    background-color:#FBFBFB;
+    font-family: 'PT Serif', serif;
+}
+
+h1 {
+    color:#4f4f4f;
+    font-size: 3rem;
+    font-family: 'Changa', sans-serif;
+}
+h2 {
+    font-size:2rem;
+}
+h3 {
+    font-size:1rem;
+}
+
+div.top {
+    background-color:#FAEBD7;
+    padding:10px;
+}
+
+a {
+    display:flex;
+    color: crimson;
+    font-size: 20px;
+    
+    width:25%;
+    text-decoration: none;
+   
+    text-align: center;
+}
+
+
+
+.header-img {
+    height: 100vh;
+    background-image: url("https://pbs.twimg.com/media/E_NEYtDWEAwqwJm?format=jpg&name=large");
+    width:50%;
+    background-position: center;
+    padding-bottom:30%
+}
+#home {
+
+    background-color: rgb(226, 206, 181);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0px;
+}
+
+.about-me {
+   margin-left: 5%;
+}
+
+button {
+    padding: 10px;
+    color:bold;
+    background-color: coral;
+    font-family: 'Changa', sans-serif;
+    font-size: medium;
+    border:3px solid rgb(252, 101, 46);
+    
+}
+
+
+.box {
+    width:100px;
+    height:100px; 
+    padding-bottom: 10%; 
+}
+
+div.container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#contact {
+    background-color:#FAEBD7 ;
+    text-align: center;
+    padding-top:5%;
+    padding-bottom: 5%;
+}
+
+a {
+    text-align: center;
+}
