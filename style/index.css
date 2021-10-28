@@ -34,7 +34,7 @@ footer, header, hgroup, menu, nav, section {
     padding:0;
     margin:0;
     max-width:100%;
-    border:1px solid grey; 
+    /* border:1px solid grey;  */
 }
 
 html {
@@ -66,25 +66,67 @@ a {
     display:flex;
     color: crimson;
     font-size: 20px;
-    border:1px solid black;
+    
     width:25%;
     text-decoration: none;
-    padding:5px; 
+   
     text-align: center;
 }
 
-.links {
-    display:flex;
-    border:2px solid black;
 
-    width:25%;
-    justify-content: space-between;
+
+.header-img {
+    height: 100vh;
+    background-image: url("https://pbs.twimg.com/media/E_NEYtDWEAwqwJm?format=jpg&name=large");
+    width:50%;
+    background-position: center;
+    padding-bottom:30%
+}
+#home {
+
+    background-color: rgb(226, 206, 181);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0px;
 }
 
-#home img {
-    width: 50%;
+.about-me {
+   margin-left: 5%;
 }
-.about-me h2 {
-    display:flex;
-    align-content: center;
+
+button {
+    padding: 10px;
+    color:bold;
+    background-color: coral;
+    font-family: 'Changa', sans-serif;
+    font-size: medium;
+    border:3px solid rgb(252, 101, 46);
+    
+}
+
+
+.box {
+    width:100px;
+    height:100px; 
+    padding-bottom: 10%; 
+}
+
+div.container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#contact {
+    background-color:#FAEBD7 ;
+    text-align: center;
+    padding-top:5%;
+    padding-bottom: 5%;
+}
+
+a {
+    text-align: center;
 }
