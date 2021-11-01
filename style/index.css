@@ -34,7 +34,7 @@ footer, header, hgroup, menu, nav, section {
     padding:0;
     margin:0;
     max-width:100%;
-    /* border:1px solid grey;  */
+    border:1px solid grey; 
 }
 
 html {
@@ -89,6 +89,7 @@ a {
     justify-content: center;
     align-items: center;
     padding-bottom: 0px;
+    text-align: center;
 }
 
 .about-me {
@@ -96,7 +97,6 @@ a {
 }
 
 button {
-    padding: 10px;
     color:bold;
     background-color: coral;
     font-family: 'Changa', sans-serif;
@@ -104,19 +104,11 @@ button {
     border:3px solid rgb(252, 101, 46);
     
 }
-
-
-.box {
-    width:100px;
-    height:100px; 
-    padding-bottom: 10%; 
-}
-
 div.container {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-top: 10%;
+    padding-top:10%;
     padding-bottom: 10%;
 }
 
@@ -129,4 +121,59 @@ div.container {
 
 a {
     text-align: center;
+}
+
+@media (max-width:800px) {
+  h1 {
+      font-size: 1.6rem;
+  }  
+  .top {
+      text-align: center;
+      align-items:center;
+    
+  }
+  .links {
+    
+      justify-content: center;
+      
+  }
+  #home {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+  }
+  #home .header-img {
+      width:100%
+  }
+ .about-me {
+     width: 80%;
+     text-align: center;
+}
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8 {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#gallery {
+    height: auto;
+    width: auto;
+}
+}
+
+@media (max-width:500px) {
+    .links {
+        width: 25%;
+        margin-left: 40%;
+        justify-content: space-around;
+    }
+    h2 {
+        font-size:1.6rem
+    }
+ .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8 {
+     width: 50%;
+     ;
+ }
+ section#gallery {
+     text-align: center;
+ }
 }
