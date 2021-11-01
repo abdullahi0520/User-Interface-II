@@ -34,7 +34,7 @@ footer, header, hgroup, menu, nav, section {
     padding:0;
     margin:0;
     max-width:100%;
-    /* border:1px solid grey;  */
+    border:1px solid grey; 
 }
 
 html {
@@ -89,6 +89,7 @@ a {
     justify-content: center;
     align-items: center;
     padding-bottom: 0px;
+    text-align: center;
 }
 
 .about-me {
@@ -104,20 +105,13 @@ button {
     border:3px solid rgb(252, 101, 46);
     
 }
-
-
-.box {
-    width:100px;
-    height:100px; 
-    padding-bottom: 10%; 
-}
-
 div.container {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-top: 10%;
+    padding-top:10%;
     padding-bottom: 10%;
+    width:100%
 }
 
 #contact {
@@ -129,4 +123,37 @@ div.container {
 
 a {
     text-align: center;
+}
+
+@media (max-width:800px) {
+  h1 {
+      font-size: 1.6rem;
+  }  
+  .top {
+      text-align: center;
+      align-items:center;
+    
+  }
+  .links {
+    
+      justify-content: center;
+      
+  }
+  #home {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+  }
+  #home .header-img {
+      width:100%
+  }
+ .about-me {
+     width: 80%;
+     text-align: center;
+}
+div.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 }
