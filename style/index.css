@@ -97,7 +97,6 @@ a {
 }
 
 button {
-    padding: 10px;
     color:bold;
     background-color: coral;
     font-family: 'Changa', sans-serif;
@@ -111,7 +110,6 @@ div.container {
     justify-content: space-evenly;
     padding-top:10%;
     padding-bottom: 10%;
-    width:100%
 }
 
 #contact {
@@ -151,9 +149,31 @@ a {
      width: 80%;
      text-align: center;
 }
-div.container {
-    flex-direction: column;
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8 {
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
+#gallery {
+    height: auto;
+    width: auto;
+}
+}
+
+@media (max-width:500px) {
+    .links {
+        width: 25%;
+        margin-left: 40%;
+        justify-content: space-around;
+    }
+    h2 {
+        font-size:1.6rem
+    }
+ .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8 {
+     width: 50%;
+     ;
+ }
+ section#gallery {
+     text-align: center;
+ }
 }
